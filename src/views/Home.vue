@@ -1,12 +1,21 @@
 <template>
-  <h1 class="m-3">home page</h1>
+  <div>
+    <WeekDays/>
+    <Calender/>
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
+import WeekDays from '../components/WeekDays.vue'
+import Calender from '../components/Calender.vue'
 
 export default {
   name: 'Home',
+  components: {
+    WeekDays,
+    Calender
+  },
   data() {
     return {
       epgData: []

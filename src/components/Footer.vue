@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between bg-gray-900 p-2">
+  <div class="flex justify-between items-center p-2 bg-neutral-900">
     <v-icon name="fa-home" fill="white" scale="1.5"/>
     <router-link to="/details">
       <v-icon name="md-livetv" fill="white" scale="1.5"/>
