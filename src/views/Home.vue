@@ -4,10 +4,14 @@
       <ChannelsList/>
     </div>
     <WeekDays/>
-    <div class="absolute z-30 w-full">
-      <DayHours/>
+    <div class="relative pt-[44px]">
+      <CurrentTimeIndicator/>
+      <div class="absolute z-30 w-full top-0">
+        <DayHours/>
+      </div>
+      <Calender/>
     </div>
-    <Calender/>
+    <NowTimeBtn/>
   </div>
 </template>
 
@@ -17,6 +21,8 @@ import ChannelsList from '../components/ChannelsList.vue'
 import WeekDays from '../components/WeekDays.vue'
 import Calender from '../components/Calender.vue'
 import DayHours from '../components/DayHours.vue'
+import CurrentTimeIndicator from '../components/CurrentTimeIndicator.vue'
+import NowTimeBtn from '../components/NowTimeBtn.vue'
 
 export default {
   name: 'Home',
@@ -24,7 +30,9 @@ export default {
     WeekDays,
     Calender,
     ChannelsList,
-    DayHours
+    DayHours,
+    CurrentTimeIndicator,
+    NowTimeBtn
   },
   data() {
     return {

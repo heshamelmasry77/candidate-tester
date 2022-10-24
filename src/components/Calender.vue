@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-[44px]">
+  <div>
     <DayShows/>
   </div>
 </template>
