@@ -10,42 +10,42 @@
 
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-red-900 bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         <span>Hello</span>
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>
     </li>
-    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800">
+    <li class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500">
       <div class="flex flex-col justify-center items-center h-full">
         Hello
       </div>

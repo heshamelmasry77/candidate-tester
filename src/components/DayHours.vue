@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex overflow-x-scroll justify-between items-center p-4 py-3 border-b border-t border-gray-500 bg-neutral-800 scrollbar-hide h-11">
+  <ul class="flex overflow-x-scroll justify-between items-center p-4 py-3 border-t border-b border-gray-500 bg-neutral-800 scrollbar-hide h-11">
     <li class="flex-none w-56 text-white first:pl-4 last:pr-4">
       <div class="flex justify-center items-center">
         <span>14:00</span>
