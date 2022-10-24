@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <DayHours/>
+  <div class="relative top-11">
     <DayShows/>
   </div>
 </template>
 
 <script>
-import DayHours from '../components/DayHours.vue'
 import DayShows from "./DayShows.vue";
 
 export default {
   name: 'Calender',
   components: {
-    DayHours,
     DayShows
   },
   data() {
@@ -20,4 +17,3 @@ export default {
   },
 }
 </script>
-
