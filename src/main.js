@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 
 import "./style.css";
+
 import App from "./App.vue";
 import router from "./router";
 
@@ -8,6 +9,7 @@ const app = createApp(App);
 
 // icons config
 import { OhVueIcon, addIcons } from "oh-vue-icons";
+
 import {
   FaHome,
   OiSearch,
