@@ -51,7 +51,7 @@ and I am using ♥️ ♥️ Vite ♥️ ♥️  🎉🎉🎉🎉 as my bundler 
 - Explore the EPG package and get show detail. 👷
 
 
-## Devployments
+## Devployment
 
 - (https://6359bf1dee58b2008fab69f8--radiant-pony-670dc5.netlify.app/)
 
