@@ -28,6 +28,7 @@ export default {
     ...mapGetters({
       weekDays: "home/weekDays",
       todayDate: "home/todayDate",
+      dayHours: "home/dayHours",
     }),
   },
 };

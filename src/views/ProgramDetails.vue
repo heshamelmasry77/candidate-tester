@@ -3,12 +3,8 @@
 </template>
 
 <script>
-import moment from "moment";
-
 export default {
   name: "ProgramDetails",
-  created() {
-    console.log(days);
-  },
+  created() {},
 };
 </script>

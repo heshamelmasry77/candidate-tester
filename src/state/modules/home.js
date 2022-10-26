@@ -7,7 +7,7 @@ const state = {
 
 const getters = {
   // = computed properties
-  weekDays: (state, getters) => {
+  weekDays: () => {
     const startOfWeek = moment().startOf("isoWeek");
     const endOfWeek = moment().endOf("isoWeek");
     let days = [];
@@ -23,6 +23,13 @@ const getters = {
   },
   todayDate: () => {
     return moment().format("D.M");
+  },
+  dayHours: () => {
+    let hours = [];
+    for (let i = 0; i < 24; i++) {
+      hours.push(i + ":" + "00");
+    }
+    return hours;
   },
 };
 
