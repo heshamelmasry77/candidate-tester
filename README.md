@@ -1,91 +1,58 @@
-# Vue 3 + Vite
+# EPG Web App Hesh : An app to show latest shows by EPG API
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## What this project use:
 
-## Recommended IDE Setup
+- Vue.js (https://vuejs.org/)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- Moment.js  //TODO find a better package (https://momentjs.com/)
 
-#Candidate-Tester-requirements
+- VUEX to manage state  (https://vuex.vuejs.org/)
 
-## Candidate-Tester
+- Workflow is managed by : Husky - Prettier - Eslint 
 
-This Repo is intended to instruct new Frontend developer (Native & Web) candidates on the steps to follow for completing the Norigin Media testing task.
+Husky : (https://github.com/typicode/husky)
+Prettier : (https://prettier.io/)
+eslint: (https://eslint.org/)
 
----
+- TailwindCSS is used for styling and it is being used for rapid development.  (https://tailwindcss.com/)
 
-#### What we want to assess:
+and I am using ♥️ ♥️ Vite ♥️ ♥️  🎉🎉🎉🎉 as my bundler ♥️:
 
-- Your coding skills.
-- Intuition for design & UX.
-- Multi Screen / Cross Browser allocations.
-- Platform, Framework & Tooling knowledge.
-- App packaging and production readiness.
+(https://vitejs.dev/)
 
-#### Requirements :
 
-- Build a single screen web or native application (**EPG Screen**) using your choice of framework / tooling
 
-  **NOTE:** For _Web Developers_: React, Vue.js, React-Native, Vanilla JS / Typescript for example - No restrictions apply, however try to avoid using project generators / starter-kits / sample projects were possible.
 
-  **NOTE:** For _Native Developers_: Java, Kotlin, ObjectiveC - No restrictions to tooling or frameworks apply.
+## Project requirements
 
-- Use the designs in the `./mockups` folder to guide your work.
-- Use **Mock-Api** package included to supply the EPG data. See `package.json`.
-- For Web developers task submission is expected to be in NPM package format (**Preferably via GitHub**) with simple steps to install and run. Pass the link to your contact with our management or your recruiter when you're done.
+- Node JS : (https://docs.npmjs.com/getting-started/installing-node)
 
-  **NOTE:** For _Native Developers_: Alternative methods of submission are acceptible for Android & iOS projects.
 
-- Task is not expected to take any more than 2 days of your time.
 
-**NOTE:** There is no need to use this tester repo as the basis for your task. You can rework it, supply your own structure and include the libraries / dependencies however you prefer.
+## How to run the project
 
-- A base level of interactivity is expected regarding the progression of time and how this is refected in the EPG. For example the yellow line indicating the current program should update and change, as well as a functional auto-scroll shortcut to be triggered when pressing on the "NOW" button.
+- Clone the project
 
-#### Cool to have (But not required and wont negatively impact assessment):
+- `npm install` to install node modules.
 
-- Add more interactions, animations or just nail the UX.
-- Responsive layouts for multi-screen support.
-- Make performance and optimization considerations.
-- Additional screens using mock data api.
-- Additional EPG showing an alternative layout.
+- `npm run build` to build the project.
 
----
+- `npm run start` on one terminal
 
-## Design Example:
+- `npm run preview` to run in Production mode and this should be on a different terminal.
 
-We have included some mockup designs to act as a guide. You can find them in the `./mockups` folder.
+- `npm run dev` to run in Development mode and this should be on a different terminal.
 
-Example EPG design:
 
-![alt text](https://raw.githubusercontent.com/NoriginMedia/candidate-tester/master/mockups/EPG_small.png "Logo Title Text 1")
+## To do
 
-NOTE: Additional screens are optional and only if you really want to impress us with your skillz (Yes.. with a Z) should you add them to your app.
+- Use something else than moment js. 🕊️
+- Make the shows move when click the now BTN. 🛎️
+- Explore the EPG package and get show detail. 👷
 
----
 
-## Mock-API:
 
-We have provided a basic mock api to supply EPG data for this task.
 
-This is packaged as a standard Node NPM module. To install simply run: `-> npm install` from the project root directory.
-Of course Node.JS should be installed beforehand. For Native Developers not familar with NPM here is the [NPM Documentation](https://docs.npmjs.com/getting-started/installing-node)
 
-To run the update & run mock-api server execute the command below:
 
-```
--> npm run start
-```
 
-You should see the server start on port 1337.
-
-```
-Mock service running at http://localhost:1337
-```
-
-You can now request data from the mock-api:
-`Try It: http://localhost:1337/epg`
-
-For additional information you can find the package and the documentation here: [Norigin Mock-API](https://github.com/NoriginMedia/mock-api/tree/cloudberry)
-
----
