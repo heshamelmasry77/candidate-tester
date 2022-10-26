@@ -1,8 +1,10 @@
 import moment from "moment";
+import { GET_EPG_URL } from "../../settings/api";
+import axios from "axios";
 
 const state = {
   // = data
-  isHere: true,
+  channels: [],
 };
 
 const getters = {
@@ -37,9 +39,27 @@ const getters = {
   },
 };
 
-const actions = {};
+const actions = {
+  getChannels({ commit }) {
+    axios
+      .get(GET_EPG_URL)
+      .then(function (response) {
+        // handle success
+        console.log(response);
+        commit("SET_CHANNELS", response.data.channels);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  },
+};
 
-const mutations = {};
+const mutations = {
+  SET_CHANNELS(state, channels) {
+    state.channels = channels;
+  },
+};
 
 export default {
   namespaced: true,
