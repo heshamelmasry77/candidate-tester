@@ -1,6 +1,6 @@
 <template>
   <div>
-    <DayShows/>
+    <DayShows />
   </div>
 </template>
 
@@ -8,12 +8,12 @@
 import DayShows from "./DayShows.vue";
 
 export default {
-  name: 'Calender',
+  name: "Calender",
   components: {
-    DayShows
+    DayShows,
   },
   data() {
-    return {}
+    return {};
   },
-}
+};
 </script>

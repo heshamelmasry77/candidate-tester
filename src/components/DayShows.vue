@@ -1,13 +1,13 @@
 <template>
   <div class="overflow-y-scroll scrollbar-hide h-[467px]">
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
-    <DayShowsList/>
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
+    <DayShowsList />
   </div>
 </template>
 
@@ -15,12 +15,12 @@
 import DayShowsList from "./DayShowsList.vue";
 
 export default {
-  name: 'DayShows',
+  name: "DayShows",
   components: {
-    DayShowsList
+    DayShowsList,
   },
   data() {
-    return {}
+    return {};
   },
-}
+};
 </script>

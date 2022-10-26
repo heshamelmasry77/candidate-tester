@@ -1,6 +1,8 @@
 <template>
-  <ul class="flex overflow-x-scroll gap-x-4 justify-between items-center p-4 bg-neutral-800 scrollbar-hide h-16">
-    <li class="flex flex-col items-center text-gray-400 first:pl-4 last:pr-4 ">
+  <ul
+    class="flex overflow-x-scroll gap-x-4 justify-between items-center p-4 bg-neutral-800 scrollbar-hide h-16"
+  >
+    <li class="flex flex-col items-center text-gray-400 first:pl-4 last:pr-4">
       <span>Mon</span>
       <span>13.04</span>
     </li>
@@ -53,11 +55,11 @@
 
 <script>
 export default {
-  name: 'WeekDays',
+  name: "WeekDays",
   data() {
     return {
-      epgData: []
-    }
+      epgData: [],
+    };
   },
-}
+};
 </script>
