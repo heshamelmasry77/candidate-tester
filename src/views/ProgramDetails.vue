@@ -8,6 +8,9 @@ import moment from "moment";
 export default {
   name: "ProgramDetails",
   created() {
+
+
+
     const startOfWeek = moment().startOf("isoWeek");
     const endOfWeek = moment().endOf("isoWeek");
     let days = [];
