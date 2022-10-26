@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <div
-      class="absolute overflow-y-scroll scrollbar-hide h-[576px] shadow-2xl shadow-gray-600 z-20"
+      class="absolute overflow-y-scroll scrollbar-hide h-[calc(100vh-46px)] sm:h-[576px] shadow-2xl shadow-gray-600 z-20"
     >
       <ChannelsList :channels="channels" />
     </div>

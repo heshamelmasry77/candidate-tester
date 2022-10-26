@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between items-center p-2 bg-neutral-900 shadow-2xl shadow-black relative"
+    class="flex justify-between items-center p-2 bg-neutral-900 shadow-2xl shadow-black absolute bottom-0 z-50 sm:relative w-full"
   >
     <v-icon name="fa-home" fill="white" scale="1.5" />
     <router-link to="/details">

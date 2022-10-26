@@ -21,9 +21,6 @@ import { mapGetters } from "vuex";
 
 export default {
   name: "DayHours",
-  data() {
-    return {};
-  },
   computed: {
     ...mapGetters({
       dayHours: "home/dayHours",
