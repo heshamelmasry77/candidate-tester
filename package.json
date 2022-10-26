@@ -10,7 +10,8 @@
     "start:mock-api": "./node_modules/.bin/osprey-mock-service -f ./node_modules/nm-mock-api/demo.raml -p 1337 --cors",
     "start": "node ./node_modules/nm-mock-api/scripts/updateEpg.js && npm run start:mock-api",
     "pretty": "npx prettier --write .",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "lint": "eslint src"
   },
   "author": "",
   "license": "ISC",
@@ -26,6 +27,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "autoprefixer": "^10.4.12",
+    "eslint": "^8.26.0",
+    "eslint-plugin-vue": "^9.6.0",
     "husky": "^3.1.0",
     "postcss": "^8.4.18",
     "prettier": "2.7.1",

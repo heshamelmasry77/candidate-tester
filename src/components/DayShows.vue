@@ -1,5 +1,7 @@
 <template>
-  <div class="overflow-y-scroll scrollbar-hide h-[467px]">
+  <div
+    class="overflow-y-scroll scrollbar-hide h-[calc(100vh-169px)] sm:h-[467px]"
+  >
     <DayShowsList
       v-for="channel in channels"
       :id="channel.id"

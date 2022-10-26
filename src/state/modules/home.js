@@ -48,7 +48,7 @@ const actions = {
       .then(function (response) {
         commit("SET_CHANNELS", response.data.channels);
       })
-      .catch(function (error) {
+      .catch(function () {
         //TODO handle errors
         // console.log(error);
       });

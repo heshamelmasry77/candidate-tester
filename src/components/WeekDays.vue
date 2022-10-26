@@ -19,11 +19,6 @@ import { mapGetters } from "vuex";
 
 export default {
   name: "WeekDays",
-  data() {
-    return {
-      epgData: [],
-    };
-  },
   computed: {
     ...mapGetters({
       weekDays: "home/weekDays",
