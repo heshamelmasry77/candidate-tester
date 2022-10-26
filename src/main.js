@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 
 import "./style.css";
+import store from "./state/store";
 
 import App from "./App.vue";
 import router from "./router";
@@ -32,5 +33,6 @@ addIcons(
   LaStarSolid
 );
 app.component("v-icon", OhVueIcon);
+app.use(store);
 
 app.use(router).mount("#app");

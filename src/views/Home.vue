@@ -18,13 +18,13 @@
 </template>
 
 <script>
-import axios from "axios";
 import ChannelsList from "../components/ChannelsList.vue";
 import WeekDays from "../components/WeekDays.vue";
 import Calender from "../components/Calender.vue";
 import DayHours from "../components/DayHours.vue";
 import CurrentTimeIndicator from "../components/CurrentTimeIndicator.vue";
 import NowTimeBtn from "../components/NowTimeBtn.vue";
+import { mapState, mapActions } from "vuex";
 
 export default {
   name: "Home",
@@ -37,14 +37,20 @@ export default {
     NowTimeBtn,
   },
   data() {
-    return {
-      epgData: [],
-    };
+    return {};
   },
-  mounted() {
-    axios.get("http://localhost:1337/epg").then((response) => {
-      console.log("response: ", response);
-    });
+  computed: {
+    ...mapState({
+      channels: (state) => state.home.channels,
+    }),
+  },
+  methods: {
+    ...mapActions({
+      getChannels: "home/getChannels",
+    }),
+  },
+  created() {
+    this.getChannels();
   },
 };
 </script>
