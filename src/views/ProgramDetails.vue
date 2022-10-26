@@ -1,10 +1,9 @@
 <template>
-  <h1 class="m-3">program details page</h1>
+  <h1 class="m-3">Coming Soon...</h1>
 </template>
 
 <script>
 export default {
   name: "ProgramDetails",
-  created() {},
 };
 </script>

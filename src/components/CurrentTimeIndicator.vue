@@ -1,5 +1,6 @@
 <template>
   <div
+    id="now-time-indicator"
     class="absolute -ml-1 top-0 border-l border-1 border-yellow-500 left-1/2 h-full z-50"
   >
     <div class="h-11 border border-yellow-500"></div>
@@ -9,8 +10,5 @@
 <script>
 export default {
   name: "CurrentTimeIndicator",
-  data() {
-    return {};
-  },
 };
 </script>

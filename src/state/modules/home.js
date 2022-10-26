@@ -27,7 +27,6 @@ const getters = {
     return moment().format("D.M");
   },
   dayHours: () => {
-    console.log(moment().format("H"));
     let hours = [];
     for (let i = 0; i < 24; i++) {
       hours.push(i + ":" + "00");
@@ -37,6 +36,9 @@ const getters = {
   nowHour: () => {
     return moment().format("H");
   },
+  nowMinutes: () => {
+    return moment().get("minutes");
+  },
 };
 
 const actions = {
@@ -44,13 +46,11 @@ const actions = {
     axios
       .get(GET_EPG_URL)
       .then(function (response) {
-        // handle success
-        console.log(response);
         commit("SET_CHANNELS", response.data.channels);
       })
       .catch(function (error) {
-        // handle error
-        console.log(error);
+        //TODO handle errors
+        // console.log(error);
       });
   },
 };

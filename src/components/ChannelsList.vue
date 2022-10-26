@@ -11,46 +11,30 @@
       <div class="flex flex-col justify-center items-center h-full"></div>
     </li>
     <li
+      v-for="channel in channels"
+      :key="channel.id"
       class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
     >
       <div class="flex flex-col justify-center items-center h-full">
-        <span>Hello</span>
+        <img
+          :src="channel.images.logo"
+          v-bind:alt="channel.id"
+          @error="replaceByDefault"
+        />
       </div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
-    </li>
-    <li
-      class="flex-none p-4 w-20 h-20 text-white bg-neutral-800 border-b border-gray-500"
-    >
-      <div class="flex flex-col justify-center items-center h-full">Hello</div>
     </li>
   </ul>
 </template>
+<script>
+import img from "../assets/default.png";
+
+export default {
+  name: "ChannelsList",
+  props: ["channels"],
+  methods: {
+    replaceByDefault(e) {
+      e.target.src = img;
+    },
+  },
+};
+</script>

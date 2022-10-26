@@ -3,7 +3,7 @@
     <div
       class="absolute overflow-y-scroll scrollbar-hide h-[576px] shadow-2xl shadow-gray-600 z-20"
     >
-      <ChannelsList />
+      <ChannelsList :channels="channels" />
     </div>
     <WeekDays />
     <div class="relative pt-[44px]">
@@ -11,7 +11,7 @@
       <div class="absolute z-30 w-full top-0">
         <DayHours />
       </div>
-      <Calender />
+      <DayShows :channels="channels" />
     </div>
     <NowTimeBtn />
   </div>
@@ -20,21 +20,21 @@
 <script>
 import ChannelsList from "../components/ChannelsList.vue";
 import WeekDays from "../components/WeekDays.vue";
-import Calender from "../components/Calender.vue";
 import DayHours from "../components/DayHours.vue";
 import CurrentTimeIndicator from "../components/CurrentTimeIndicator.vue";
 import NowTimeBtn from "../components/NowTimeBtn.vue";
+import DayShows from "../components/DayShows.vue";
 import { mapState, mapActions } from "vuex";
 
 export default {
   name: "Home",
   components: {
     WeekDays,
-    Calender,
     ChannelsList,
     DayHours,
     CurrentTimeIndicator,
     NowTimeBtn,
+    DayShows,
   },
   data() {
     return {};
