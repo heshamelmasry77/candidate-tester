@@ -27,7 +27,6 @@ const getters = {
     return moment().format("D.M");
   },
   dayHours: () => {
-    console.log(moment().format("H"));
     let hours = [];
     for (let i = 0; i < 24; i++) {
       hours.push(i + ":" + "00");
