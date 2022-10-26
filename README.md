@@ -37,7 +37,7 @@ and I am using ♥️ ♥️ Vite ♥️ ♥️  🎉🎉🎉🎉 as my bundler 
 
 - `npm run build` to build the project.
 
-- `npm run start` on one terminal
+- `npm run start` on one terminal, the server
 
 - `npm run preview` to run in Production mode and this should be on a different terminal.
 
