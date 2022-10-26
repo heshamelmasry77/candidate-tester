@@ -5,7 +5,7 @@
       :key="show.id"
       :class="[showsIdx % 2 === 0 ? 'bg-black' : 'bg-neutral-700']"
       :style="{ width: show.durationInWidth + 'px' }"
-      class="flex-none text-white first:pl-4 last:pr-4 p-4 h-20 border-b border-gray-500"
+      class="flex-none text-white first:pl-4 first:ml-20 last:pr-4 p-4 h-20 border-b border-gray-500"
     >
       <div class="flex flex-col justify-center items-center overflow-y-hidden">
         <span class="capitalize text-sm text-center">{{ show.title }}</span>
@@ -22,9 +22,6 @@ import moment from "moment";
 export default {
   name: "DayShowsList",
   props: ["shows"],
-  data() {
-    return {};
-  },
   computed: {
     modifiedShows() {
       return this.shows.map((show) => {
@@ -32,8 +29,8 @@ export default {
         let startTime = moment(show.start);
         let duration = moment.duration(endTime.diff(startTime));
         let seconds = duration.asSeconds() / 10;
-        let formattedStartTime = moment(show.start).format("h:mm");
-        let formattedEndTime = moment(show.end).format("h:mm");
+        let formattedStartTime = moment(show.start).format("hh:mm");
+        let formattedEndTime = moment(show.end).format("hh:mm");
         return {
           ...show,
           durationInWidth: seconds,

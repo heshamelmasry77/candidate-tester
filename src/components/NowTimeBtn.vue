@@ -18,6 +18,11 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    this.handleNavigateNowHour();
+    const nowTimeIndicator = document.getElementById("now-time-indicator");
+    nowTimeIndicator.style.marginLeft = `${this.nowMinutes}px`;
+  },
   methods: {
     handleNavigateNowHour() {
       let element = document.getElementById(`${this.nowHourId}`);
@@ -31,6 +36,7 @@ export default {
   computed: {
     ...mapGetters({
       nowHourId: "home/nowHour",
+      nowMinutes: "home/nowMinutes",
     }),
   },
 };

@@ -17,8 +17,5 @@ export default {
   components: {
     DayShowsList,
   },
-  data() {
-    return {};
-  },
 };
 </script>
