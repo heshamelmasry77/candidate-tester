@@ -1,15 +1,16 @@
 <template>
   <ul
     id="hours-container"
-    class="flex overflow-x-scroll justify-between items-center p-4 py-3 border-t border-b border-gray-500 bg-neutral-800 scrollbar-hide h-11"
+    class="flex overflow-x-scroll justify-between items-center border-t border-b border-gray-500 scrollbar-hide h-11 overflow-y-hidden bg-neutral-800"
   >
     <li
       v-for="(hour, index) in dayHours"
       :key="index"
       :id="index"
-      class="flex-none w-56 text-white first:pl-4 last:pr-4"
+      class="flex-none w-56 text-white last:pr-4 h-full bg-neutral-800"
     >
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center h-full relative">
+        <div class="h-2 w-[1px] bg-neutral-700 absolute bottom-0"></div>
         <span>{{ hour }}</span>
       </div>
     </li>
